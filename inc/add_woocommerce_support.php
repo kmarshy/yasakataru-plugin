@@ -31,7 +31,7 @@ function FM_yasakaturu_add_checkout_fee_for_gateway( ) {
 
 
 
-		$woocommerce->cart->add_fee( 'Cash On Delivery fee', $fee, false, '' ); //you might need to change the label to japanese
+		$woocommerce->cart->add_fee( '代金引換', $fee, false, '' ); //you might need to change the label to japanese
 	}
 }
 add_action( 'woocommerce_cart_calculate_fees','FM_yasakaturu_add_checkout_fee_for_gateway' );
